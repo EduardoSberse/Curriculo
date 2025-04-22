@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    
+
+
+<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilo.css" />
     <title>curriculo sberse</title>
@@ -23,8 +29,11 @@
     </header>
 
     <section class="descricao">
-      <p>Coloque aqui uma breve descriçao sobre você</p>
+      <p>Opa,tudo bem? aqui você ira encontrar algumas informações sobre mim. Sou estudante do IFMT de Campo Verde, no momento estou cursando técnico em informática, também gosto muito de... </p>
+    
+    <button id="botao" > continue aqui </button>
     </section>
+
 
     <section class="conteudo">
       <div class="bloco">
@@ -44,8 +53,9 @@
     </section>
 
     <section class="falacomigo">
-      <div><h2>Interresado no meu curriculo?</h2></div>
-      <form>
+      <div><h2>Interessado no meu curriculo?</h2></div>
+      <form  action="https://formspree.io/f/mzzrbdla"
+      method="POST"> 
         <label for="email">Email:</label>
         <input
           placeholder="nome@gmail.com"
@@ -63,16 +73,18 @@
           required
         />
 
-        <button type="submit">Entrar em contato</button>
+        <button id="botao" type="submit">Entrar em contato</button>
       </form>
     </section>
 
     <section class="conteudo">
       <div class="bloco">
+        <div id="card">
         <h2>Sobre Mim</h2>
-        <p>Adicione informções sobre você</p>
+        <p>Estudar sobre mecânica e aviação, além de gostar de estar em meio à natureza 
+        </p>
+        </div>
       </div>
-
       <div class="bloco">
         <h2>Meu Canal</h2> 
         <iframe width="350" height="205" src="https://www.youtube.com/embed/I-7fyW9WP9k?si=OoccwnOwpOFcBwjl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -93,6 +105,6 @@
 
 
 
-        
+  <script src="index.js"></script>
   </body>
 </html>
